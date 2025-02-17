@@ -1,4 +1,4 @@
-# Copyright (c) 2009 Upi Tamminen <desaster@gmail.com>
+# Copyright (c) 2009 Upi Tamminen &lt;desaster@gmail.com&gt;
 # See the COPYRIGHT file for more information
 
 import sys, os
@@ -15,11 +15,11 @@ from twisted.cred import portal
 from twisted.conch.ssh import factory, keys
 
 if os.name == 'posix' and os.getuid() == 0:
-    print "ERROR: You must not run kippo as root!"
+    print("ERROR: You must not run kippo as root!")
     sys.exit(1)
 
 if not os.path.exists('kippo.cfg'):
-    print "ERROR: kippo.cfg is missing!"
+    print("ERROR: kippo.cfg is missing!")
     sys.exit(1)
 
 from kippo.core.config import config
