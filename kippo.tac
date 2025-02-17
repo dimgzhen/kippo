@@ -19,7 +19,7 @@ if os.name == 'posix' and os.getuid() == 0:
     sys.exit(1)
 
 if not os.path.exists('kippo.cfg'):
-    print 'ERROR: kippo.cfg is missing!'
+    print "ERROR: kippo.cfg is missing!"
     sys.exit(1)
 
 from kippo.core.config import config
